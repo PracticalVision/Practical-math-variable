@@ -52,13 +52,24 @@ ___TEMPLATE_PARAMETERS___
     "type": "TEXT",
     "name": "number1",
     "displayName": "Value 1",
-    "simpleValueType": true
+    "simpleValueType": true,
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ],
+    "help": "Values can be numbers or numbers as strings."
   },
   {
     "type": "TEXT",
     "name": "number2",
     "displayName": "Value 2",
-    "simpleValueType": true
+    "simpleValueType": true,
+    "valueValidators": [
+      {
+        "type": "NON_EMPTY"
+      }
+    ]
   }
 ]
 
@@ -69,7 +80,7 @@ const makeNumber = require('makeNumber');
 const getType = require('getType');
 const type = data.type;
 
-if (!data.number1 || !data.number2) return undefined;
+if (data.number1.length <= 0 || data.number2.length <= 0 ) return undefined;
 
 const number1 = makeNumber(data.number1);
 const number2 = makeNumber(data.number2);

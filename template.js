@@ -2,7 +2,7 @@ const makeNumber = require('makeNumber');
 const getType = require('getType');
 const type = data.type;
 
-if (!data.number1 || !data.number2) return undefined;
+if (data.number1.length <= 0 || data.number2.length <= 0 ) return undefined;
 
 const number1 = makeNumber(data.number1);
 const number2 = makeNumber(data.number2);
