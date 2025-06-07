@@ -1,6 +1,4 @@
-homepage: "https://stape.io/"
-versions:
-  - sha: 5047dd0f7a7a2f988d2ef1d54f8d08f967208764
-    changeNotes: Fixed value check.
-  - sha: cb3e443f4c71e2199a06f833831fa8e51a70bbd8
+homepage: "https://practicalvision.co.il"
+documentation: "https://practicalvision.co.il/gtm-templates/practical-math-variable/"
+  - sha: SHA_PLACEHOLDER
     changeNotes: Initial release.
