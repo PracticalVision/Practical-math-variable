@@ -1,5 +1,7 @@
 homepage: "https://practicalvision.co.il"
 documentation: "https://practicalvision.co.il/gtm-templates/practical-math-variable/"
 versions:
+  - sha: 3e474f1fdf5c46d899a4c723d67285b6f604abd6
+    changeNotes: updated format in the license and metadata files.
   - sha: 0c64e6d76bdb46668d09ae531b773dfa0e290406
     changeNotes: Initial release.
